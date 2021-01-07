@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+body {
+    padding: 0;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.body {
+    animation: showBody 1.2s;
+}
+
+@keyframes showBody {
+    0% {
+        margin: -2500px 0 0 0 ;
+        opacity: 0;
+    }
+    100% {
+        margin: 0px 0 0 0 ;
+        opacity: 1;
+    }
+}
+
+::-webkit-scrollbar {
+    background-color: rgb(255, 255, 255);
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(31, 212, 173);
+    border-radius: 2px;
+    width: 10px;
+}
+
+.sec-1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+
+#navs {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 75px;
+    box-shadow: 1px 3px 50px 3.5px rgb(233, 232, 232);
+}
+
+.menu-mobile {
+    position: fixed;
+    top: 80px;
+    right: 100px;
+    background-color: #fff;
+    border-radius: 4px;
+    padding-top: 4px;
+    padding-bottom: 2px;
+    padding-right: 0px;
+    width: 280px;
+    height: auto;
+    box-shadow: 0 0 15px lightgrey;
+    font-family: 'Raleway', sans-serif;
+    color: grey;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.menu-web {
+    position: fixed;
+    top: 80px;
+    right: 100px;
+    background-color: #fff;
+    border-radius: 4px;
+    padding-top: 4px;
+    padding-bottom: 2px;
+    padding-right: 0px;
+    width: 280px;
+    height: auto;
+    box-shadow: 0 0 15px lightgrey;
+    font-family: 'Raleway', sans-serif;
+    color: grey;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.menu-mobile p, .menu-web p {
+    font-weight: bold;
+    font-size: 17;
+}
+
+.menu-mobile div, .menu-web div {
+    padding: 5px;
+    width: 100%;
+    height: 50%;
+    background-color: #fff;
+    display: flex;
+}
+
+.list-mobile p, .list-web p {
+    position: relative;
+    top: 5px;
+    padding-left: 10px;
+}
+
+.list-mobile:hover a, .list-web:hover a {
+    padding-left: 20px;
+    transition: 0.3s;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    background-color: rgb(45, 209, 174);
+    color: white;
+}
+
+.menu-mobile-show {
+    position: fixed;
+    top: 100px;
+    z-index: 999;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.menu-web-show {
+    position: fixed;
+    top: 100px;
+    z-index: 999;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.menu-mobile a, .menu-web a {
+    color: grey;
+    text-decoration: none;
+}
+
+.user {
+    position: absolute;
+    font-size: 38px;
+    margin-top: 1px;
+    right: 35px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.user:hover {
+    transition: 0.4s;
+    color: rgb(192, 192, 192);
+}
+
+.LOGO {
+    position: relative;
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+.menus {
+    margin-right: 100px;
+}
+
+.menus .nav-link {
+    font-weight: bold;
+    margin-right: 40px;
+}
+
+.bt-submit {
+    position: relative;
+    margin-right: 10px;
+    background-color: rgb(45, 209, 174);
+    font-weight: 500;
+    width: 100px;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid rgb(45, 209, 174);
+    outline: none;
+}
+
+#jumbotron {
+    position: relative;
+    width: 100%;
+    display: flex;
+    padding: 50px;
+    top: 75px;
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(rgb(212, 252, 238), rgb(255, 255, 255));
+    height: 600px;
+}
+
+#jumbotron h1 {
+    width: 100%;
+    font-weight: bold;
+    color: rgb(37, 223, 182);
+    font-size: 60px;
+}
+
+#jumbotron p {
+    position: relative;
+    margin-top: 25px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.bt-start {
+    position: relative;
+    margin-top: 25px;
+    margin-left: 10px;
+    background-color: rgb(45, 209, 174);
+    color: white;
+    transform: scale(1.2);
+    font-weight: 500;
+}
+
+.cn1 {
+    position: relative;
+    top: 40px;
+    left: 20px;
+    width: 40%;
+    padding: 20px;
+}
+
+.cn1 h1 {
+    color: rgb(87, 87, 87);
+    font-size: 50px;
+}
+
+.cn2 {
+    width: 60%;
+}
+
+.brands {
+    position: absolute;
+    top: -160px;
+    right: -140px;
+    transform: scale(0.5);
+}
+
+.sec-1 {
+    position: relative;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 500px;
+    margin-bottom: 150px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.sec-text-brand {
+    text-align: center;
+}
+
+.sec-text-brand h1 {
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(77, 75, 75);
+}
+
+.sec-content-1 {
+    padding-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.sec-content-1 h3 {
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.list-tech {
+    position: relative;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    display: flex;
+    padding: 0 80px;
+    justify-content: space-between;
+}
+
+.img-list {
+    position: relative;
+    width: 170px;
+    height: 130px;
+    padding-top: 10px;
+    transform: scale(0.8);
+    border-radius: 90px;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 20px lightgrey;
+}
+
+.img-list img {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
+
+.tap {
+    position: fixed;
+    bottom: 60px;
+    z-index: 90;
+    right: 30px;
+    opacity: 0;
+    font-size: 45px;
+    transition: 0.5s;
+}
+
+.sec-2 {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    width: 90%;
+    border-radius: 6px;
+    margin-bottom: 40px;
+    font-family: 'Raleway', sans-serif;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    background-color: #fff;
+    box-shadow: 0 0 20px lightgrey;
+}
+
+.sec-2 div {
+    width: 50%;
+}
+
+.sec-2 .tech1 {
+    position: relative;
+    top: 20px;
+    width: 90%;
+    transform: scale(0.63);
+}
+
+.sec-2 .tech2 {
+    width: 90%;
+    transform: scale(0.7);
+}
+
+.sec-2 .tech4 {
+    position: relative;
+    margin-top: -40px;
+    width: 90%;
+    transform: scale(0.44);
+}
+
+.sec-2 .tech5 {
+    position: relative;
+    margin-top: -58px;
+    width: 90%;
+    transform: scale(0.35);
+}
+
+.sec-2 .tech6 {
+    position: relative;
+    margin-top: -40px;
+    width: 90%;
+    transform: scale(0.33);
+}
+
+.sec-2 .tech7 {
+    position: relative;
+    margin-top: 0px;
+    width: 90%;
+    transform: scale(0.44);
+}
+
+.sec-2 .tech8{
+    position: relative;
+    margin-top: 7px;
+    width: 90%;
+    transform: scale(0.44);
+}
+
+.sec-2 .tech9{
+    position: relative;
+    margin-top: -25px;
+    width: 90%;
+    transform: scale(0.40);
+}
+
+.sec-2 .tech10{
+    position: relative;
+    margin-top: -85px;
+    width: 90%;
+    transform: scale(0.28);
+}
+
+.sec-2 small {
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.sec-2 p {
+    margin-top: 30px;
+    font-weight: 500;
+    text-align: left;
+    width: 90%;
+    font-size: 19px;
+}
+
+.text-content {
+    margin-top: 50px;
+}
+
+.text-content small {
+    color: rgb(45, 209, 174);
+}
+
+.text-content p {
+    font-weight: 500;
+}
+
+.bt-tech {
+    background-color: rgb(45, 209, 174);
+    font-weight: 500;
+    border-radius: 3px;
+    margin-top: 20px;
+    width: 140px;
+    box-shadow: 0 0 12px lightgrey;
+    color: white;
+}
+
+.react {
+    font-size: 400px;
+}
+
+.sec-3 {
+    position: relative;
+    width: 88%;
+    margin: auto;
+    height: 300px;
+    box-shadow: 0 0 15px lightgrey;
+    background-color: #fff;
+    font-weight: 500;
+    display: flex;
+}
+
+.bt-mern {
+    background-color: rgb(45, 209, 174);
+    color: white;
+    font-weight: 500;
+    width: 150px;
+    border-radius: 5px;
+}
+
+.sec-3 div {
+    width: 50%;
+    padding: 50px;
+}
+
+.sec-3 h2 {
+    font-weight: bold;
+    font-size: 40px;
+    color: rgb(36, 209, 200);
+}
+
+.sec-3 p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.sec-3 .map {
+    width: 90%;
+    transform: scale(1);
+}
+
+.sec-footer {
+    position: relative;
+    width: 100%;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    display: flex;
+    padding: 10px;
+    background-color: rgb(235, 231, 231);
+    font-weight: 500;
+}
+
+.sec-footer p {
+    position: relative;
+    top: 10px;
+    margin-left: 40px;
+}
+
+.sosmed {
+    position: relative;
+    margin-left: auto;
+}
+
+.sosmed i {
+    font-size: 32px;
+    margin-right: 50px;
+    background-color: rgb(36, 209, 200);
+    color: white;
+    border-radius: 90px;
+    padding: 5px;
+}

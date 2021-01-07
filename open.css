@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,500;0,700;0,800;1,100;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,500;1,600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.open {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+.content {
+    position: relative;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+}
+
+.open p {
+    position: relative;
+    top: -30px;
+    margin: auto auto;
+    font-weight: bold;
+    width: 700px;
+    text-align: center;
+    padding: 0 50px;
+}
+
+.bt-open {
+    position: relative;
+    margin-top: 20px;
+    background-color: rgb(45, 209, 174);
+    width: 180px;
+    font-weight: 500;
+    padding: 10px;
+    color: white;
+}
+
+#navs {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 75px;
+    box-shadow: 1px 3px 50px 3.5px rgb(233, 232, 232);
+}
+
+.sertif {
+    position: fixed;
+    top: 60px;
+    right: -90%;
+    width: 370px;
+    height: 700px;
+    border-radius: 6px;
+    background-color: #fff;
+    z-index: 888;
+    padding: 20px;
+    box-shadow: 0 0 10px lightgrey;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.sertif-show {
+    opacity: 1;
+    transition: 0.85s;
+    display: block;
+    right: 0%;
+}
+
+.toggle-btn {
+    position: absolute;
+    left: -70px;
+    font-size: 40px;
+    cursor: pointer;
+    z-index: 888;
+}
+
+.toggle-btn:active {
+    transition: 0.5s;
+    transform: scale(0.88);
+}
+
+.sertif div {
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    margin: 20px 0px;
+    height: 25%;
+}
+
+.sertif div img {
+    width: 100%;
+    transform: scale(0.9);
+}
+
+.LOGO {
+    position: relative;
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+.menus {
+    margin-right: 100px;
+}
+
+.menus .nav-link {
+    font-weight: bold;
+    margin-right: 40px;
+}
+
+.bt-submit {
+    background-color: rgb(45, 209, 174);
+    font-weight: 500;
+    width: 100px;
+    color: white;
+}
+
+#jumbotron {
+    position: relative;
+    width: 100%;
+    display: flex;
+    padding: 50px;
+    top: 75px;
+    background-color: rgb(248, 246, 246);
+    height: 600px;
+}
+
+#jumbotron h1 {
+    width: 100%;
+    font-size: 60px;
+}
+
+#jumbotron p {
+    margin-top: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.bt-start {
+    position: relative;
+    margin-top: 25px;
+    margin-left: 10px;
+    background-color: rgb(45, 209, 174);
+    color: white;
+    transform: scale(1.2);
+    font-weight: bold;
+}
+
+.cn1 {
+    width: 40%;
+    padding: 20px;
+}
+
+.cn1 h1 {
+    color: rgb(87, 87, 87);
+    font-size: 50px;
+}
+
+.cn2 {
+    width: 60%;
+}
+
+.brands {
+    position: absolute;
+    top: -90px;
+    right: -140px;
+    transform: scale(0.6);
+    z-index: 99;
+}

@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,500;0,700;0,800;1,100;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.body {
+    animation: showBody 1.2s;
+}
+
+@keyframes showBody {
+    0% {
+        margin: -2500px 0 0 0 ;
+        opacity: 0;
+    }
+    100% {
+        margin: 0px 0 0 0 ;
+        opacity: 1;
+    }
+}
+
+::-webkit-scrollbar {
+    background-color: rgb(255, 255, 255);
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(31, 212, 173);
+    border-radius: 2px;
+    width: 10px;
+}
+
+.sec-1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 30;
+}
+
+
+#navs {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 75px;
+    box-shadow: 1px 3px 50px 3.5px rgb(233, 232, 232);
+}
+
+.menu-mobile {
+    position: fixed;
+    top: 80px;
+    right: 100px;
+    background-color: #fff;
+    border-radius: 4px;
+    padding-top: 4px;
+    padding-bottom: 2px;
+    padding-right: 0px;
+    width: 280px;
+    height: auto;
+    box-shadow: 0 0 15px lightgrey;
+    font-family: 'Raleway', sans-serif;
+    color: grey;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.menu-web {
+    position: fixed;
+    top: 80px;
+    right: 100px;
+    background-color: #fff;
+    border-radius: 4px;
+    padding-top: 4px;
+    padding-bottom: 2px;
+    padding-right: 0px;
+    width: 280px;
+    height: auto;
+    box-shadow: 0 0 15px lightgrey;
+    font-family: 'Raleway', sans-serif;
+    color: grey;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.tap {
+    position: fixed;
+    bottom: 60px;
+    z-index: 90;
+    right: 30px;
+    opacity: 0;
+    font-size: 45px;
+    transition: 0.5s;
+}
+
+.menu-mobile p, .menu-web p {
+    font-weight: bold;
+    font-size: 17;
+}
+
+.menu-mobile div, .menu-web div {
+    padding: 5px;
+    width: 100%;
+    height: 50%;
+    background-color: #fff;
+    display: flex;
+}
+
+.list-mobile p, .list-web p {
+    position: relative;
+    top: 5px;
+    padding-left: 10px;
+}
+
+.list-mobile:hover a, .list-web:hover a {
+    padding-left: 20px;
+    transition: 0.3s;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    background-color: rgb(45, 209, 174);
+    color: white;
+}
+
+.menu-mobile-show {
+    position: fixed;
+    top: 100px;
+    z-index: 999;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.menu-web-show {
+    position: fixed;
+    top: 100px;
+    z-index: 999;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.menu-mobile a, .menu-web a {
+    color: grey;
+    text-decoration: none;
+}
+
+.user {
+    position: absolute;
+    font-size: 38px;
+    margin-top: 1px;
+    right: 35px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.user:hover {
+    transition: 0.4s;
+    color: rgb(192, 192, 192);
+}
+
+.LOGO {
+    position: relative;
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+.menus {
+    margin-right: 100px;
+}
+
+.menus .nav-link {
+    font-weight: bold;
+    margin-right: 40px;
+}
+
+.bt-submit {
+    position: relative;
+    margin-right: 10px;
+    background-color: rgb(45, 209, 174);
+    font-weight: 500;
+    width: 100px;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid rgb(45, 209, 174);
+    outline: none;
+}
+
+#jumbotron {
+    position: relative;
+    width: 100%;
+    display: flex;
+    padding: 50px;
+    top: 75px;
+    background: linear-gradient(rgb(212, 252, 238), rgb(255, 255, 255));
+    height: 600px;
+}
+
+#jumbotron h1 {
+    font-family: 'Quicksand', sans-serif;
+    width: 100%;
+    color: rgb(37, 223, 182);
+    font-weight: bold;
+    font-size: 60px;
+}
+
+#jumbotron p {
+    margin-top: 25px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.bt-start {
+    position: relative;
+    margin-top: 25px;
+    margin-left: 10px;
+    background-color: rgb(45, 209, 174);
+    color: white;
+    transform: scale(1.2);
+    font-weight: 500;
+}
+
+.cn1 {
+    position: relative;
+    top: 38px;
+    left: 20px;
+    width: 40%;
+    padding: 20px;
+}
+
+.cn1 h1 {
+    color: rgb(87, 87, 87);
+    font-size: 50px;
+}
+
+.cn2 {
+    width: 60%;
+}
+
+.brands {
+    position: absolute;
+    top: -60px;
+    right: 0px;
+    transform: scale(0.6);
+}
+
+.sec-1 {
+    position: relative;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 500px;
+    margin-bottom: 150px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.sec-text-brand {
+    text-align: center;
+}
+
+.sec-text-brand h1 {
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(77, 75, 75);
+}
+
+.sec-content-1 {
+    padding-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.sec-content-1 h3 {
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.sec-2 {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    top: 70px;
+    width: 100%;
+    height: auto;
+    display: block;
+    background-color: #fff;
+}
+
+.sec-2 p {
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(75, 74, 74);
+    font-size: 24px;
+}
+
+.sec-2 .p {
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(75, 74, 74);
+    font-size: 24px;
+}
+
+.sec-2 .p::before {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 3px;
+    background-color: rgb(252, 176, 13);
+    bottom: -8px;
+    margin-left: 13px;
+}
+
+.cards {
+    position: relative;
+    top: 40px;
+    justify-content: space-between;
+    padding: 0 150px;
+    display: flex;
+}
+
+.cards .card {
+    position: relative;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #fff;
+    border: none;
+    transition: 0.3s;
+    box-shadow: 0 0px 30px rgb(233, 232, 232);
+}
+
+.cards .card:hover {
+    box-shadow: 0 0px 30px rgb(218, 219, 219);
+    position: relative;
+    margin-top: -10px;
+    cursor: pointer;
+    transition: 0.4s;
+
+}
+
+.cards .card p {
+    font-weight: 500;
+    font-size: 19px;
+}
+
+.bt-lihat {
+    background-color: rgb(45, 209, 174);
+    width: 135px;
+    color: white;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.sec-footer {
+    position: relative;
+    width: 100%;
+    margin: 300px auto 0 auto;
+    text-align: center;
+    display: flex;
+    padding: 10px;
+    background-color: rgb(235, 231, 231);
+    font-weight: 500;
+}
+
+.sec-footer p {
+    position: relative;
+    top: 10px;
+    margin-left: 40px;
+}
+
+.sosmed {
+    position: relative;
+    margin-left: auto;
+}
+
+.sosmed i {
+    font-size: 32px;
+    margin-right: 50px;
+    background-color: rgb(36, 209, 200);
+    color: white;
+    border-radius: 90px;
+    padding: 5px;
+}
+
+a:hover {
+    color: white;
+}
+
+.sec-3 {
+    position: relative;
+    top: 210px;
+    width: 88%;
+    margin: auto;
+    height: 300px;
+    box-shadow: 0 0 15px lightgrey;
+    background-color: #fff;
+    font-weight: 500;
+    display: flex;
+}
+
+.bt-mern {
+    background-color: rgb(45, 209, 174);
+    color: white;
+    font-weight: 500;
+    width: 150px;
+    border-radius: 5px;
+}
+
+.sec-3 div {
+    width: 50%;
+    padding: 50px;
+}
+
+.sec-3 h2 {
+    font-weight: 500;
+    font-size: 30px;
+    color: rgb(36, 209, 200);
+}
+
+.sec-3 p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.sec-3 .android {
+    position: relative;
+    top: -100px;
+    width: 90%;
+    transform: scale(0.8);
+}
